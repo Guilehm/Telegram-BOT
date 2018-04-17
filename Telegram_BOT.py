@@ -17,3 +17,4 @@ telebot.message_loop(recebendo_msg)
 
 while True:
     pass
+
