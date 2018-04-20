@@ -49,6 +49,11 @@ class Chatbot():
             return resp
         except:
             pass
+        try:
+            escreve_arquivo(frase)
+        except:
+            cria_arquivo()
+            escreve_arquivo(frase)
         return 'Não entendi'
             
     def pegaNome(self,nome):
@@ -82,3 +87,13 @@ class Chatbot():
         else:
             print(frase)
         self.historico.append(frase)
+
+
+def cria_arquivo():
+    arquivo = open('frases_novas.txt', 'w')
+    arquivo.close()
+
+def escreve_arquivo(frase):
+    arquivo = open('frases_novas.txt', 'a')
+    arquivo.write('\n' + frase)
+    arquivo.close()

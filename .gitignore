@@ -99,3 +99,10 @@ ENV/
 .mypy_cache/
 .idea/vcs.xml
 .idea/workspace.xml
+*.xml
+frases_novas.txt
+GuilehmBot.json
+GuilehmBot.json
+.idea/workspace.xml
+GuilehmBot.json
+GuilehmBot.json
