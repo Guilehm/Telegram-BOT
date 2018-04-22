@@ -1,7 +1,8 @@
 import telepot
 from Chatbot import Chatbot
+from key import botkey
 
-telebot = telepot.Bot('560759619:AAEHui3g5uMsq7hIWc0VZvVIacTJK_SS0NI')
+telebot = telepot.Bot(botkey)
 bot = Chatbot('GuilehmBot')
 
 def recebendo_msg(msg):
